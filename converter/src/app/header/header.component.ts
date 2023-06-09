@@ -19,12 +19,10 @@ export class HeaderComponent {
   ngAfterViewInit() {
     this.invite.subscribe(data => {
       this.EUR = Number(data.rates.EUR);
-
       this.USD = Number(data.rates.UAH);
       this.dataBase = {
         USD: this.USD,
         EUR: this.USD / this.EUR,
-
       }
     })
 

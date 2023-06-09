@@ -8,7 +8,6 @@ import { ChangeDetectorRef, Component, Input } from '@angular/core';
 export class MainPageComponent {
   USD!: number;
   EUR!: number;
-
   one!: string;
   two!: string;
   constructor(private cdr: ChangeDetectorRef) { }

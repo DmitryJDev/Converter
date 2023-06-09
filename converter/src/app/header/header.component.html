@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row justify-content-end">
+        <h3 class=" text-primary ">Currency Converter</h3>
+        <div class="col ">
+            <em *ngIf="USD" class="text-muted"><img src="assets\free-icon-united-kingdom-555417.png" /> {{USD.toFixed(2)}}</em> /
+            <em *ngIf="USD" class="text-muted"> <img src="assets\free-icon-european-union-206593.png" /> {{(USD/EUR).toFixed(2)}} </em>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<app-main-page *ngIf="dataBase" [dataBase]="dataBase"></app-main-page>
